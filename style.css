@@ -1,0 +1,138 @@
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+#container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 100%;
+	min-width: 100%;
+	justify-content: space-between;
+	overflow: auto;
+	padding: 0.5rem 0 1.5rem 0;
+}
+
+#products-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	width: 100%;
+	flex-basis: 80%;
+	min-width: 80%;
+}
+
+/* Items */
+.products-item {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: white;
+	padding: 5px 5px 5px 5px;
+	border-radius: 10px;
+	border: 2px solid black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item-name {
+	font-size: 1.2rem;
+}
+
+.item-price {
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+.cItem {
+	margin: 0.25rem 0;
+	padding-top: 0.25rem;
+	border-top: 0.25px solid #d4d4d4;
+}
+
+.cItemName,
+.cItemPrice {
+	margin-bottom: 0.25rem;
+}
+
+.item-img {
+	display: block;
+	object-fit: fill;
+	border-radius: 10px;
+}
+
+#item-count-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: -1.25rem;
+}
+
+#item-count-container input {
+	width: 60%;
+	text-align: center;
+	border: 1.5px solid #d4d4d4;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+.changeBtn {
+	border: 1.5px solid #d4d4d4;
+	background-color: white;
+	font-weight: bold;
+}
+
+.changeBtn:hover {
+	border-color: black;
+	background-color: lightblue;
+	color: white;
+}
+
+.changeBtn:active {
+	background-color: white;
+	color: black;
+}
+
+.decreaseBtn {
+	border-radius: 50px 0 0 50px;
+}
+
+.increaseBtn {
+	border-radius: 0 50px 50px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	display: none;
+}
+
+/* Shopping Cart */
+#shopping-cart-container {
+	flex-basis: 15%;
+	min-width: 15%;
+	border-left: #d4d4d4 2px solid;
+	padding: 15px 15px 15px 25px;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+#cart-items {
+	text-align: left;
+}
+
+.cart-row {
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+}
+.cart-row div {
+	margin: 0.5rem 0;
+}
+
+#checkoutBtn {
+	padding: 0.75rem 1rem;
+	background-color: #73a5c6;
+	border: #d4d4d4 0.5px solid;
+	color: white;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
